@@ -21,9 +21,7 @@ class Flight < ApplicationController
                                  headers: {"Content-Type" => "application/json"}
                                )
 
-JSON.parse(response)['trips']['tripOption'][0]['slice'][0]['segment'][0]['leg'][0]['mileage']
+     JSON.parse(response)
 
  end
 end
-
-#

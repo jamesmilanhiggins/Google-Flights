@@ -1,2 +1,5 @@
 <h1> Flights Index Page</h1>
-  <%= @flights %>
+Distance  <%= @flights['trips']['tripOption'][0]['slice'][0]['segment'][0]['leg'][0]['mileage'] %>
+<br>
+<hr>
+Price  <%= @flights['trips']['tripOption'][0]['pricing'][0]['saleTotal'] %>
