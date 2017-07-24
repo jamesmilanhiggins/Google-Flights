@@ -2,29 +2,41 @@
 Distance  <%= @flights['trips']['tripOption'][0]['slice'][0]['segment'][0]['leg'][0]['mileage'] %>
 <br>
 <hr>
-Price
+
 <% @flights['trips']['tripOption'].each do |flight| %>
-
-  $$: <%= flight['saleTotal'] %>
-  Mileage: <%= flight['slice'][0]['segment'][0]['leg'][0]['mileage'] %>
-
+  <div class="flight-div">
+    Airline Carrier <%= flight['slice'][0]['segment'][0]['flight']['carrier'] %>
+    <br>
+    Airline Number <%= flight['slice'][0]['segment'][0]['flight']['number'] %>
+    <br>
+    Price: <%= flight['saleTotal'] %>
+    <br>
+    Mileage: <%= flight['slice'][0]['segment'][0]['leg'][0]['mileage'] %>
+    <br>
 <!-- #code to not divide by zero -->
   <% if (flight['saleTotal'].gsub(/[^\d\.-]/,'').to_i) != 0  %>
 
     <!-- #check ratio -->
     <% if (flight['slice'][0]['segment'][0]['leg'][0]['mileage'].to_i) / (flight['saleTotal'].gsub(/[^\d\.-]/,'').to_i) > 10  %>
       Miles Per Dollar (mp$) =  <%= (flight['slice'][0]['segment'][0]['leg'][0]['mileage'].to_i) / (flight['saleTotal'].gsub(/[^\d\.-]/,'').to_i) %> mp$
+      <br>
       This is a great deal!!
+      <br>
     <% elsif (flight['slice'][0]['segment'][0]['leg'][0]['mileage'].to_i) / (flight['saleTotal'].gsub(/[^\d\.-]/,'').to_i) > 8 %>
       Miles Per Dollar (mp$) =  <%= (flight['slice'][0]['segment'][0]['leg'][0]['mileage'].to_i) / (flight['saleTotal'].gsub(/[^\d\.-]/,'').to_i) %> mp$
+      <br>
       This is a decent deal
+      <br>
     <% else %>
       Miles Per Dollar (mp$) =  <%= (flight['slice'][0]['segment'][0]['leg'][0]['mileage'].to_i) / (flight['saleTotal'].gsub(/[^\d\.-]/,'').to_i) %> mp$
+      <br>
       This is a bad deal
+      <br>
     <% end %>
 
   <% else %>
     mileage is 0 and you cannot get price per mile because you cannot divide by 0
   <% end %>
-     <br>
+   <br>
+ </div>
 <% end %>

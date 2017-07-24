@@ -7,14 +7,14 @@ class Flight < ApplicationController
                                                 "slice": [
                                                   {
                                                     "origin": "PDX",
-                                                    "destination": "LAX",
+                                                    "destination": ["LAX", "SEA"],
                                                     "date": "2017-12-02"
                                                   }
                                                 ],
                                                 "passengers": {
                                                   "adultCount": 1
                                                 },
-                                                "solutions": 5,
+                                                "solutions": 100,
                                                 "refundable": false
                                               }
                                             }.to_json,
