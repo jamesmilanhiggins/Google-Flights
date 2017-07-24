@@ -52,3 +52,4 @@ To do lists
   - Test API call in rails
   - Display flights in views
   - Display flight name[price][distance]
+  - Take user input for Price/mileage pass that variable to back-end conditional 

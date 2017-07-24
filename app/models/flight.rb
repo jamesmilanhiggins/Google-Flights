@@ -24,4 +24,11 @@ class Flight < ApplicationController
      JSON.parse(response)
 
  end
+
+ def get_flights_mileage
+
+ end
+
+ def get_flights_price
+ end
 end
