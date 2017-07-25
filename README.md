@@ -49,5 +49,9 @@ end
   - Take user destination and date, and return flights under inputted Miles per Dollar
 
 
-  - Take user input for Price/mileage pass that variable to back-end conditional
+  - Devise and RailsAdmin
+  - Make people login before they can search 
+
+
+  -Take user input for Price/mileage pass that variable to back-end conditional
   - Spec and Testing
