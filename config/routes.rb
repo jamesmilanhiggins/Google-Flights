@@ -6,7 +6,7 @@ Rails.application.routes.draw do
  }
 
 
-  root to: "flights#index"
+  root to: "home#index"
 
   resources :flights
 end
