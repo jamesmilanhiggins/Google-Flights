@@ -1,4 +1,4 @@
-class Home < ApplicationController
+class Home < ApplicationRecord
  #   def get_flights
  #     response = RestClient::Request.execute(method: :post,
  #                                 url: 'https://www.googleapis.com/qpxExpress/v1/trips/search?key=' + ENV['GOOGLE_FLIGHTS_API_KEY'],

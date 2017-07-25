@@ -1,4 +1,4 @@
-class Flight < ApplicationController
+class Flight < ApplicationRecord
 
   def initialize(airport)
     @airport = airport
