@@ -10,6 +10,34 @@ body {
   background-size: cover;
   background-repeat: none;
 
+
+
+}
+.nav-bar {
+  height: 20%;
+  display: block;
+  border-color: #47BDE5;
+  border-style: inset;
+  border-width: thick;
+  text-align: center;
+  vertical-align: middle;
+
+  h1 {
+    font-size: 80px;
+  }
+  // margin: 10px;
+  // padding: 10px;
+}
+.nav-left {
+  height: 100%;
+  display: block;
+  overflow: hidden;  //code added to prevent scroll
+
+}
+.nav-body {
+  height: 100%;
+  display: block;
+  overflow: auto; 
 }
 // background blue #5EDFFF
 // background dark blue #47BDE5
