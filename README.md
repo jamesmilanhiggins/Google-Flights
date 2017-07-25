@@ -1,27 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* instructions on how to get a goolge flights api KEY
+  Create a .env file and add GOOGLE_FLIGHTS_API_KEY=[ADD YOUR API KEY HERE]
 
 
 To do lists
@@ -68,3 +50,4 @@ end
 
 
   - Take user input for Price/mileage pass that variable to back-end conditional
+  - Spec and Testing

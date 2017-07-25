@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
 
- root to: "flights#index"
- resources :flights
+
+ devise_for :users, controllers: {
+   sessions: 'users/sessions'
+ }
+
+
+  root to: "flights#index"
+
+  resources :flights
 end
