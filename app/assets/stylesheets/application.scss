@@ -23,11 +23,19 @@ body {
   vertical-align: middle;
 
   h1 {
-    font-size: 80px;
+    font-size: 50px;
   }
-  // margin: 10px;
-  // padding: 10px;
+  h1:hover {
+  // font-size: 80px;
+  }
+
 }
+
+
+.nav-bar:hover {
+  background-color: #47BDE5;
+}
+
 .nav-left {
   height: 100%;
   display: block;
@@ -37,7 +45,7 @@ body {
 .nav-body {
   height: 100%;
   display: block;
-  overflow: auto; 
+  overflow: auto;
 }
 // background blue #5EDFFF
 // background dark blue #47BDE5
