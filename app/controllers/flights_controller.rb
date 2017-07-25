@@ -1,6 +1,9 @@
 class FlightsController < ApplicationController
+
+
   def index
-    @flights = Flight.new.get_flights
+    flight_object = Flight.new("SFO")
+    @flights = flight_object.get_flights
   end
 
 end
