@@ -12,7 +12,19 @@
       <!-- #check ratio -->
       <% if (flight['slice'][0]['segment'][0]['leg'][0]['mileage'].to_i) / (flight['saleTotal'].gsub(/[^\d\.-]/,'').to_i) > 8  %>
         <div class="flight-div">
-          Destionation: <%= flight['slice'][0]['segment'][0]['leg'][0]['destination'] %>
+          <!-- This returns the final destination, if trips have a stop -->
+        Final Destination =  <%= flight['slice'][0]['segment'].last['leg'][0]['destination'] %>
+          <br>
+        Number of stops =  <%= flight['slice'][0]['segment'].length - 1 %>
+          <br>
+        
+          <%# flight['slice'][0]['segment'].each do |segment| %>
+            <!-- Destination(not accurate if multiple stops)-   -->
+            <%# segment['leg'][0]['destination'] %>
+            <!-- <br> -->
+          <%# end %>
+
+            Incorrect Destionation(first stop): <%= flight['slice'][0]['segment'][0]['leg'][0]['destination'] %>
           <br>
           Total Travel Time: <%= flight['slice'][0]['duration'] %> - Minutes
           <br>
@@ -35,7 +47,7 @@
           <hr>
 
        </div>
-      <%# elsif (flight['slice'][0]['segment'][0]['leg'][0]['mileage'].to_i) / (flight['saleTotal'].gsub(/[^\d\.-]/,'').to_i) > 8 %>
+        <%# elsif (flight['slice'][0]['segment'][0]['leg'][0]['mileage'].to_i) / (flight['saleTotal'].gsub(/[^\d\.-]/,'').to_i) > 8 %>
         <!-- Miles Per Dollar (mp$) =  <%= (flight['slice'][0]['segment'][0]['leg'][0]['mileage'].to_i) / (flight['saleTotal'].gsub(/[^\d\.-]/,'').to_i) %> mp$ -->
         <!-- <br> -->
         <!-- This is a decent deal -->

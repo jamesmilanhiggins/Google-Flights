@@ -1,10 +1,11 @@
 class Flight < ApplicationController
 
-  def initialize(airport)
+  def initialize(airport, date)
     @airport = airport
+    @date = date
   end
 
-  
+
    def get_flights
      response = RestClient::Request.execute(method: :post,
                                  url: 'https://www.googleapis.com/qpxExpress/v1/trips/search?key=' + ENV['GOOGLE_FLIGHTS_API_KEY'],
@@ -14,7 +15,7 @@ class Flight < ApplicationController
                                                   {
                                                     "origin": "PDX",
                                                     "destination": @airport ,
-                                                    "date": "2017-12-02"
+                                                    "date": @date
                                                   }
                                                 ],
                                                 "passengers": {

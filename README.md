@@ -50,7 +50,8 @@ end
 
 
   - Devise and RailsAdmin
-  - Make people login before they can search 
+  - Make people login before they can search
+  - callbacks for airport code input, upcase
 
 
   -Take user input for Price/mileage pass that variable to back-end conditional
