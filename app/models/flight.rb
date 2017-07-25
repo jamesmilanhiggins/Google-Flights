@@ -1,7 +1,8 @@
 class Flight < ApplicationRecord
 
-  def initialize(airport)
+  def initialize(airport, date)
     @airport = airport
+    @date = date
   end
 
 
@@ -13,14 +14,14 @@ class Flight < ApplicationRecord
                                                 "slice": [
                                                   {
                                                     "origin": "PDX",
-                                                    "destination": @airport ,
-                                                    "date": "2017-09-23"
+                                                    "destination": @airport,
+                                                    "date": @date
                                                   }
                                                 ],
                                                 "passengers": {
                                                   "adultCount": 1
                                                 },
-                                                "solutions": 200,
+                                                "solutions": 300,
                                                 "refundable": false
                                               }
                                             }.to_json,
