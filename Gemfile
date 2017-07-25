@@ -18,6 +18,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'rest-client'
+gem 'pry'
 
 
 gem 'rails_admin', '~> 1.2'

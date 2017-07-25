@@ -1,8 +1,7 @@
 class Flight < ApplicationController
 
-  def initialize(airport, date)
+  def initialize(airport)
     @airport = airport
-    @date = date
   end
 
 
@@ -15,7 +14,7 @@ class Flight < ApplicationController
                                                   {
                                                     "origin": "PDX",
                                                     "destination": @airport ,
-                                                    "date": @date
+                                                    "date": "2017-09-23"
                                                   }
                                                 ],
                                                 "passengers": {
@@ -32,12 +31,8 @@ class Flight < ApplicationController
 
  end
 
- def get_flights_mileage
 
- end
 
- def get_flights_price
- end
 end
 
 #
