@@ -3,29 +3,20 @@
 
 
 body {
-  background-image: image-url('airplane.jpg');
+  // background-image: image-url('airplane.jpg');
   height: 100%;
   width: 100%;
   position: fixed;
   background-size: cover;
   background-repeat: none;
-  //  min-width: 100%;
-  //  min-height: 100%;
-  // min-width: 1024px;
-  // min-height: 100%;
-  // width: 100%;
-  // height: auto;
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // color: lightblue;
+
 }
 // background blue #5EDFFF
 // background dark blue #47BDE5
 
 .btn-flight {
   background-color: #47BDE5;
-  
+
 }
 /* User sign in and sign forms. */
 .border-form-div {
@@ -34,13 +25,10 @@ body {
   margin: 0 auto 20px;
   background-color: #fff;
   border: 1px solid #e5e5e5;
-  // -webkit-border-radius: 5px;
-  //    -moz-border-radius: 5px;
-          border-radius: 5px;
-  // -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-  //    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
 }
+
 .border-form-div .form-signin-heading,
 .border-form-div .checkbox {
   margin-bottom: 10px;

@@ -1,7 +1,6 @@
 class FlightsController < ApplicationController
 
   def index
-binding.pry
     flight_object = Flight.new(params[:airport], params[:date])
     @flights = flight_object.get_flights
   end
@@ -11,7 +10,4 @@ binding.pry
    def flight_params
      params.require(:flight).permit(:airport, :date)
    end
-
-
-
 end
