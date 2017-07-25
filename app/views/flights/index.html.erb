@@ -23,6 +23,10 @@
         <br>
         Mileage: <%= flight['slice'][0]['segment'][0]['leg'][0]['mileage'] %>
         <br>
+        Arrival Time: <%= flight['slice'][0]['segment'][0]['leg'][0]['arrivalTime'] %>
+        <br>
+        Departure Time: <%= flight['slice'][0]['segment'][0]['leg'][0]['departureTime'] %>
+        <br>
         Miles Per Dollar (mp$) =  <%= (flight['slice'][0]['segment'][0]['leg'][0]['mileage'].to_i) / (flight['saleTotal'].gsub(/[^\d\.-]/,'').to_i) %> mp$
         <br>
         This is a great deal!!
