@@ -1,5 +1,5 @@
 class Flight < ApplicationRecord
-
+  @@response = nil
   def initialize(origin, destination, date)
     @origin = origin
     @destination = destination
@@ -29,10 +29,21 @@ class Flight < ApplicationRecord
                                  headers: {"Content-Type" => "application/json"}
                                )
 
-     JSON.parse(response)
-
+    @@response = JSON.parse(response)
  end
-
+  def self.get_best_deal
+    bestdeal = []
+    @@response['trips']['tripOption'].each do |flight|
+      miles_per_dollar = ((flight['slice'][0]['segment'][0]['leg'][0]['mileage'].to_i + 0.0) / (flight['saleTotal'].gsub(/[^\d\.-]/,'').to_i + 0.0)).round(2)
+      flight["miles_per_dollar"] = "#{miles_per_dollar}"
+      bestdeal.push(flight)
+    end
+    sorted_deals = bestdeal.sort_by {|x| x['miles_per_dollar'].to_i}
+    sorted_deals.each do |deal|
+      puts deal["miles_per_dollar"]
+    end
+    sorted_deals[sorted_deals.length - 1]
+  end
 
 
 end

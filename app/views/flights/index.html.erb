@@ -3,7 +3,12 @@
 <hr>
 <% if user_signed_in? %>
 <div class="row">
+  <h3>the best deal <%= @best_flight['miles_per_dollar'] %></h3>
+    <%# quotes.max_by { |quote| quote["High"].to_f }["High"].to_f %>
+<!-- ['trips']['tripOption'][0]['slice'][0]['segment'][0]['leg'][0]['mileage'] -->
+  <hr>
   <div class="col-md-4">
+
     <h4> > 10 mp$</h4>
     <h4> These Flights are GREAT!!!</h4>
     <% @flights['trips']['tripOption'].each do |flight| %>
@@ -13,6 +18,10 @@
         <% if ((flight['slice'][0]['segment'][0]['leg'][0]['mileage'].to_i + 0.0) / (flight['saleTotal'].gsub(/[^\d\.-]/,'').to_i + 0.0)).round(2) > 10  %>
           <div class="flight-div">
             <!-- This returns the final destination, if trips have a stop -->
+
+
+
+
             <strong><%= flight['saleTotal'] %></strong> ______ <%= flight['slice'][0]['segment'][0]['leg'][0]['departureTime'] %> - <%= flight['slice'][0]['segment'][0]['leg'][0]['arrivalTime'] %> ____
             <% if flight['slice'][0]['segment'].length === 0 %>
                "Nonstop"
