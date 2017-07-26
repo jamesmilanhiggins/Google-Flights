@@ -31,6 +31,7 @@ class Flight < ApplicationRecord
 
     @@response = JSON.parse(response)
  end
+ 
   def self.get_best_deal
     bestdeal = []
     @@response['trips']['tripOption'].each do |flight|
@@ -40,7 +41,6 @@ class Flight < ApplicationRecord
     end
     sorted_deals = bestdeal.sort_by {|x| x['miles_per_dollar'].to_i}
     sorted_deals.each do |deal|
-      puts deal["miles_per_dollar"]
     end
     sorted_deals[sorted_deals.length - 1]
   end

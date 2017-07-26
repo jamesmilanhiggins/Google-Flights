@@ -3,10 +3,46 @@
 <hr>
 <% if user_signed_in? %>
 <div class="row">
-  <h3>the best deal <%= @best_flight['miles_per_dollar'] %></h3>
-    <%# quotes.max_by { |quote| quote["High"].to_f }["High"].to_f %>
-<!-- ['trips']['tripOption'][0]['slice'][0]['segment'][0]['leg'][0]['mileage'] -->
+  <h3>the best deal MP$:<%= @best_flight['miles_per_dollar'] %></h3>
+  Price<%= @best_flight['saleTotal'].gsub(/[^\d\.-]/,'').to_i + 0.0 %>
+  <br>
+  Depature Time<%= @best_flight['slice'][0]['segment'][0]['leg'][0]['departureTime'] %>
   <hr>
+
+      <strong><%= @best_flight['saleTotal'] %></strong> ______ <%= @best_flight['slice'][0]['segment'][0]['leg'][0]['departureTime'] %> - <%= @best_flight['slice'][0]['segment'][0]['leg'][0]['arrivalTime'] %> ____
+      <% if @best_flight['slice'][0]['segment'].length === 0 %>
+         "Nonstop"
+         <% end %>
+       Origin =  <%= @best_flight['slice'][0]['segment'][0]['leg'][0]['origin'] %>
+       <br>
+      Final Destination =  <%= @best_flight['slice'][0]['segment'].last['leg'][0]['destination'] %>
+      <br>
+
+      Number of stops =  <%= @best_flight['slice'][0]['segment'].length - 1 %>
+      <br>
+
+
+
+      <br>
+      Total Travel Time: <%= @best_flight['slice'][0]['duration'] %> - Minutes
+      <br>
+      Airline Carrier <%= @best_flight['slice'][0]['segment'][0]['flight']['carrier'] %>
+      <br>
+      Airline Number <%= @best_flight['slice'][0]['segment'][0]['flight']['number'] %>
+      <br>
+      Price: <%= @best_flight['saleTotal'] %>
+      <br>
+      Mileage: <%= @best_flight['slice'][0]['segment'][0]['leg'][0]['mileage'] %>
+      <br>
+      Arrival Time: <%= @best_flight['slice'][0]['segment'][0]['leg'][0]['arrivalTime'] %>
+      <br>
+      Departure Time: <%= @best_flight['slice'][0]['segment'][0]['leg'][0]['departureTime'] %>
+      <br>
+
+
+<hr><hr>
+
+
   <div class="col-md-4">
 
     <h4> > 10 mp$</h4>
