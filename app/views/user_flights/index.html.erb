@@ -3,6 +3,7 @@
 
 <% current_user.user_flights.each do |flight| %>
 Price worked<%= flight.price %>
+ <%= link_to "",  user_user_flight_path(current_user, flight), :method => "delete", class: "btn-red glyphicon glyphicon-remove" %>
 <br>
 <% end %>
 
