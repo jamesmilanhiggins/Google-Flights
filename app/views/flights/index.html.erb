@@ -7,6 +7,15 @@
   Price<%= @best_flight['saleTotal'].gsub(/[^\d\.-]/,'').to_i + 0.0 %>
   <br>
   Depature Time<%= @best_flight['slice'][0]['segment'][0]['leg'][0]['departureTime'] %>
+
+    <%= form_tag action: 'save_flight', controller: 'user_flights' do %>
+        <%= hidden_field_tag 'mpd', @best_flight['miles_per_dollar'] %>
+        <%= submit_tag 'submit'%>
+    <% end %>
+  <!-- <button class="btn btn-primary" type="button" name="button">Save this flight</button> -->
+
+
+
   <hr>
 
       <strong><%= @best_flight['saleTotal'] %></strong> ______ <%= @best_flight['slice'][0]['segment'][0]['leg'][0]['departureTime'] %> - <%= @best_flight['slice'][0]['segment'][0]['leg'][0]['arrivalTime'] %> ____

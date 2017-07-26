@@ -15,7 +15,7 @@
         <div class="col-md-4 nav-left">
           <div class="nav-bar">
 
-          <h1> <%= link_to "Home",  '/' %></h1> 
+          <h1> <%= link_to "Home",  '/' %></h1>
 
             <%= link_to 'Sign Out',  destroy_user_session_path, :method => "delete" if user_signed_in? %>
             <%= link_to "Sign In", new_user_session_path if !user_signed_in? %>
@@ -25,7 +25,7 @@
             <h1>About</h1>
           </div>
           <div class="nav-bar">
-            <h1>James</h1>
+            <h1><%= link_to "Your Saved Flights",  '/' %></h1>
           </div>
           <div class="nav-bar">
             <h1>James</h1>

@@ -7,12 +7,15 @@ mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
    sessions: 'users/sessions'
  }
 
+  post "save_flight" => "user_flights#save_flight"
 
   root to: "home#index"
 
   resources :users do
-    resources :user_flights
+    resources :user_flights do
+    end
   end
+
   resources :flights
   resources :home
 

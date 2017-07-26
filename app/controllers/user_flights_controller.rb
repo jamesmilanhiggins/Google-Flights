@@ -1,4 +1,15 @@
 class UserFlightsController < ApplicationController
+
+  def index
+
+
+  end
+
+  def save_flight
+      new_flight = current_user.user_flights.create(:price => params[:mpd])
+
+      # @user = User.find(current_user.id)
+  end
   # def create
   #   @user = User.find(params[:user_id])
   #   @user_flight = @user.user_flights.new(user_flight_params)
