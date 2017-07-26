@@ -1,7 +1,8 @@
 class Flight < ApplicationRecord
 
-  def initialize(airport, date)
-    @airport = airport
+  def initialize(origin, destination, date)
+    @origin = origin
+    @destination = destination
     @date = date
   end
 
@@ -13,8 +14,8 @@ class Flight < ApplicationRecord
                                               "request": {
                                                 "slice": [
                                                   {
-                                                    "origin": "PDX",
-                                                    "destination": @airport,
+                                                    "origin": @origin,
+                                                    "destination": @destination,
                                                     "date": @date
                                                   }
                                                 ],
