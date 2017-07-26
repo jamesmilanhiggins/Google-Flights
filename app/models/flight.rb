@@ -15,14 +15,14 @@ class Flight < ApplicationRecord
                                                 "slice": [
                                                   {
                                                     "origin": @origin,
-                                                    "destination": @destination,
+                                                    "destination": ['LAX', 'SEA', 'BNA'],
                                                     "date": @date
                                                   }
                                                 ],
                                                 "passengers": {
                                                   "adultCount": 1
                                                 },
-                                                "solutions": 300,
+                                                "solutions": 500,
                                                 "refundable": false
                                               }
                                             }.to_json,
@@ -31,7 +31,7 @@ class Flight < ApplicationRecord
 
     @@response = JSON.parse(response)
  end
- 
+
   def self.get_best_deal
     bestdeal = []
     @@response['trips']['tripOption'].each do |flight|

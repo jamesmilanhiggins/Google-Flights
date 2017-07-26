@@ -1,10 +1,258 @@
-<h1> Home Index Page</h1>
-  <!-- <%= link_to 'Search Flights',  flights_path %> -->
 
-  <form action="flights" >
-    <input type="text" name="origin" placeholder="Origin">
-    <input type="text" name="destination" placeholder="Destination">
-    <input type="date" name="date" value="2017-12-12" >
-    <button class="btn btn-flight" type="submit" name="button">Search</button>
-  </form>
-<hr>
+<div class="border-form-div">
+
+<h2>Search Flights</h2>
+    <form action="flights" >
+      <input type="text" name="origin" placeholder="Origin" required>
+      <input type="text" name="destination" placeholder="Destination" required>
+      <input type="date" name="date" value="2017-12-12" required>
+      <button class="glyphicon glyphicon-search btn btn-flight" type="submit" name="button"></button>
+    </form>
+
+</div>
+
+<!-- <h3> List of Airport Codes</h3>
+<div class="row">
+  <div class="col-md-6">
+    <h3>Domestic Airports</h3>
+    <ul>
+      <li>Alabama : 	AL</li>
+      <li>Birmingham International Airport	 : BHM</li>
+      <li>Dothan Regional Airport	 : DHN</li>
+      <li>Mobile	 : MOB</li>
+      <li>Montgomery	 : MGM</li>
+      <li>Anchorage International Airport	 : ANC</li>
+      <li>Fairbanks International Airport	 : FAI</li>
+      <li>Juneau International Airport	 : JNU</li>
+      <li>Arizona : 	AZ</li>
+      <li>Flagstaff	 : FLG</li>
+      <li>Phoenix, Phoenix Sky Harbor International Airport	 : PHX</li>
+      <li>Tucson International Airport	 : TUS</li>
+      <li>Yuma International Airport	 : YUM</li>
+      <li>Arkansas : 	AR</li>
+      <li>Fayetteville	 : FYV</li>
+      <li>Little Rock National Airport	 : LIT</li>
+      <li>California : 	CA</li>
+      <li>Burbank	 : BUR</li>
+      <li>Fresno	 : FAT</li>
+      <li>Long Beach	 : LGB</li>
+      <li>Los Angeles International Airport	 : LAX</li>
+      <li>Oakland	 : OAK</li>
+      <li>Ontario	 : ONT</li>
+      <li>Palm Springs	PSP
+      <li>Sacramento	 : SMF</li>
+      <li>San Diego	 : SAN</li>
+      <li>San Francisco International Airport	 : SFO</li>
+      <li>San Jose	 : SJC</li>
+      <li>Santa Ana	 : SNA</li>
+      <li>Colorado : 	CO</li>
+      <li>Colorado Springs	 : COS</li>
+      <li>Denver International Airport	 : DEN</li>
+      <li>Grand Junction	 : GJT</li>
+      <li>Pueblo	 : PUB</li>
+      <li>Connecticut : 	CT</li>
+      <li>Hartford	 : BDL</li>
+      <li>District of Columbia : 	DC</li>
+      <li>Washington, Dulles International Airport	 : IAD</li>
+      <li>Washington National Airport	 : DCA</li>
+      <li>Florida : 	FL</li>
+      <li>Daytona Beach	 : DAB</li>
+      <li>Fort Lauderdale-Hollywood International Airport	 : FLL</li>
+      <li>Fort Meyers	 : RSW</li>
+      <li>Jacksonville	 : JAX</li>
+      <li>Key West International Airport	 : EYW</li>
+      <li>Miami International Airport	 : MIA</li>
+      <li>Orlando	 : MCO</li>
+      <li>Pensacola	 : PNS</li>
+      <li>St. Petersburg	 : PIE</li>
+      <li>Sarasota	 : SRQ</li>
+      <li>Tampa	 : TPA</li>
+      <li>West Palm Beach	 : PBI</li>
+      <li>Panama City-Bay County International Airport	 : PFN</li>
+      <li>Georgia : 	GA</li>
+      <li>Atlanta Hartsfield International Airport	 : ATL</li>
+      <li>Augusta	 : AGS</li>
+      <li>Savannah	 : SAV</li>
+      <li>Hawaii : 	HI</li>
+      <li>Hilo	 : ITO</li>
+      <li>Honolulu International Airport	 : HNL</li>
+      <li>Kahului	 : OGG</li>
+      <li>Kailua	 : KOA</li>
+      <li>Lihue	 : LIH</li>
+      <li>Idaho : 	ID</li>
+      <li>Boise	 : BOI</li>
+      <li>Illinois : 	IL</li>
+      <li>Chicago Midway Airport	 : MDW</li>
+      <li>Chicago, O'Hare International Airport Airport	 : ORD</li>
+      <li>Moline	 : MLI</li>
+      <li>Peoria	 : PIA</li>
+      <li>Indiana : 	IN</li>
+      <li>Evansville	 : EVV</li>
+      <li>Fort Wayne	 : FWA</li>
+      <li>Indianapolis International Airport	 : IND</li>
+      <li>South Bend	 : SBN</li>
+      <li>Iowa : 	IA</li>
+      <li>Cedar Rapids	 : CID</li>
+      <li>Des Moines	 : DSM</li>
+      <li>Kansas : 	KS</li>
+      <li>Wichita	 : ICT</li>
+      <li>Kentucky : 	KY</li>
+      <li>Lexington	 : LEX</li>
+      <li>Louisville	 : SDF</li>
+      <li>Louisiana : 	LA</li>
+      <li>Baton Rouge	 : BTR</li>
+      <li>New Orleans International Airport	 : MSY</li>
+      <li>Shreveport	 : SHV</li>
+      <li>Maine : 	ME</li>
+      <li>Augusta	 : AUG</li>
+      <li>Bangor	 : BGR</li>
+      <li>Portland	 : PWM</li>
+      <li>Maryland : 	MD</li>
+      <li>Baltimore	 : BWI</li>
+      <li>Massachusetts : 	MA</li>
+      <li>Boston, Logan International Airport	 : BOS</li>
+      <li>Hyannis	 : HYA</li>
+      <li>Nantucket	 : ACK</li>
+      <li>Worcester	 : ORH</li>
+      <li>Michigan : 	MI</li>
+      <li>Battlecreek	 : BTL</li>
+      <li>Detroit Metropolitan Airport	 : DTW</li>
+      <li>Detroit	 : DET</li>
+      <li>Flint	 : FNT</li>
+      <li>Grand Rapids	 : GRR</li>
+      <li>Kalamazoo-Battle Creek International Airport	 : AZO</li>
+      <li>Lansing	 : LAN</li>
+      <li>Saginaw	 : MBS</li>
+      <li>Minnesota : 	MN</li>
+      <li>Duluth	 : DLH</li>
+      <li>Minneapolis/St.Paul International Airport	 : MSP</li>
+      <li>Rochester	 : RST</li>
+      <li>Mississippi : 	MS</li>
+      <li>Gulfport	 : GPT</li>
+      <li>Jackson	 : JAN</li>
+      <li>Missouri : 	MO</li>
+      <li>Kansas City	 : MCI</li>
+      <li>St Louis, Lambert International Airport	 : STL</li>
+      <li>Springfield	 : SGF</li>
+      <li>Montana : 	MT</li>
+      <li>Billings	 : BIL</li>
+      <li>Nebraska : 	NE</li>
+      <li>Lincoln	 : LNK</li>
+      <li>Omaha	 : OMA</li>
+      <li>Nevada : 	NV</li>
+      <li>Las Vegas, Las Vegas McCarran International Airport	 : LAS</li>
+      <li>Reno-Tahoe International Airport	 : RNO</li>
+      <li>New Hampshire : 	NH</li>
+      <li>Manchester	 : MHT</li>
+      <li>New Jersey : 	NJ</li>
+      <li>Atlantic City International Airport	 : ACY</li>
+      <li>Newark International Airport	 : EWR</li>
+      <li>Trenton	 : TTN</li>
+      <li>New Mexico : 	NM</li>
+      <li>Albuquerque International Airport	 : ABQ</li>
+      <li>Alamogordo	 : ALM</li>
+      <li>New York : 	NY</li>
+      <li>Albany International Airport	 : ALB</li>
+      <li>Buffalo	 : BUF</li>
+      <li>Islip	 : ISP</li>
+      <li>New York, John F Kennedy International Airport	 : JFK</li>
+      <li>New York, La Guardia Airport	 : LGA</li>
+      <li>Newburgh	 : SWF</li>
+      <li>Rochester	 : ROC</li>
+      <li>Syracuse	 : SYR</li>
+      <li>Westchester	 : HPN</li>
+      <li>North Carolina : 	NC</li>
+      <li>Asheville	 : AVL</li>
+      <li>Charlotte/Douglas International Airport	 : CLT</li>
+      <li>Fayetteville	 : FAY</li>
+      <li>Greensboro	 : GSO</li>
+      <li>Raleigh	 : RDU</li>
+      <li>Winston-Salem	 : INT</li>
+      <li>North Dakota : 	ND</li>
+      <li>Bismark	 : BIS</li>
+      <li>Fargo	 : FAR</li>
+      <li>Ohio : 	OH</li>
+      <li>Akron	 : CAK</li>
+      <li>Cincinnati	 : CVG</li>
+      <li>Cleveland	 : CLE</li>
+      <li>Columbus	 : CMH</li>
+      <li>Dayton	 : DAY</li>
+      <li>Toledo	 : TOL</li>
+      <li>Oklahoma : 	OK</li>
+      <li>Oklahoma City	 : OKC</li>
+      <li>Tulsa	 : TUL</li>
+      <li>Oregon : 	OR</li>
+      <li>Eugene	 : EUG</li>
+      <li>Portland International Airport	 : PDX</li>
+      <li>Portland, Hillsboro Airport	 : HIO</li>
+      <li>Salem	 : SLE</li>
+      <li>Pennsylvania : 	PA</li>
+      <li>Allentown	 : ABE</li>
+      <li>Erie	 : ERI</li>
+      <li>Harrisburg	 : MDT</li>
+      <li>Philadelphia	 : PHL</li>
+      <li>Pittsburgh	 : PIT</li>
+      <li>Scranton	 : AVP</li>
+      <li>Rhode Island : 	RI</li>
+      <li>Providence - T.F. Green Airport	 : PVD</li>
+      <li>South Carolina : 	SC</li>
+      <li>Charleston	 : CHS</li>
+      <li>Columbia	 : CAE</li>
+      <li>Greenville	 : GSP</li>
+      <li>Myrtle Beach	 : MYR</li>
+      <li>South Dakota : 	SD</li>
+      <li>Pierre	 : PIR</li>
+      <li>Rapid City	 : RAP</li>
+      <li>Sioux Falls	 : FSD</li>
+      <li>Tennessee : 	TN</li>
+      <li>Bristol	 : TRI</li>
+      <li>Chattanooga	 : CHA</li>
+      <li>Knoxville	 : TYS</li>
+      <li>Memphis	 : MEM</li>
+      <li>Nashville	 : BNA</li>
+      <li>Texas : 	TX</li>
+      <li>Amarillo	 : AMA</li>
+      <li>Austin Bergstrom International Airport	 : AUS</li>
+      <li>Corpus Christi	 : CRP</li>
+      <li>Dallas Love Field Airport	 : DAL</li>
+      <li>Dallas/Fort Worth International Airport	 : DFW</li>
+      <li>El Paso	 : ELP</li>
+      <li>Houston, William B Hobby Airport	 : HOU</li>
+      <li>Houston, George Bush Intercontinental Airport	 : IAH</li>
+      <li>Lubbock	 : LBB</li>
+      <li>Midland	 : MAF</li>
+      <li>San Antonio International Airport	 : SAT</li>
+      <li>Utah : 	UT</li>
+      <li>Salt Lake City	 : SLC</li>
+      <li>Vermont : 	VT</li>
+      <li>Burlington	 : BTV</li>
+      <li>Montpelier	 : MPV</li>
+      <li>Rutland	 : RUT</li>
+      <li>Virginia : 	VA</li>
+      <li>Dulles	 : IAD</li>
+      <li>Newport News	 : PHF</li>
+      <li>Norfolk	 : ORF</li>
+      <li>Richmond	 : RIC</li>
+      <li>Roanoke	 : ROA</li>
+      <li>Washington : 	WA</li>
+      <li>Pasco, Pasco/Tri-Cities Airport	 : PSC</li>
+      <li>Seattle, Tacoma International Airport	 : SEA</li>
+      <li>Spokane International Airport	 : GEG</li>
+      <li>West Virginia : 	WV</li>
+      <li>Charleston	 : CRW</li>
+      <li>Clarksburg	 : CKB</li>
+      <li>Wisconsin : 	WI</li>
+      <li>Green Bay	 : GRB</li>
+      <li>Madison	 : MSN</li>
+      <li>Milwaukee	 : MKE</li>
+      <li>Wyoming : 	WY</li>
+      <li>Casper	 : CPR</li>
+      <li>Cheyenne	 : CYS</li>
+      <li>Jackson Hole	 : JAC</li>
+      <li>Rock Springs	 : RKS</li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <h3>International Airports</h3>
+  </div> -->
+</div>
