@@ -1,5 +1,11 @@
 class Flight < ApplicationRecord
+
   @@response = nil
+
+  attr_reader = :origin
+  attr_reader = :destination
+  attr_reader = :date
+
   def initialize(origin, destination, date)
     @origin = origin
     @destination = destination

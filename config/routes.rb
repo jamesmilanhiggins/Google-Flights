@@ -10,7 +10,10 @@ mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
   root to: "home#index"
 
+  resources :users do
+    resources :user_flights
+  end
   resources :flights
   resources :home
-  
+
 end
