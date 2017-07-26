@@ -2,8 +2,6 @@ class Flight < ApplicationRecord
 
   @@response = nil
 
-
-
   def initialize(origin, destination, date)
     @origin = origin
     @destination = destination
