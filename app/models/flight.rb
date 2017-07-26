@@ -2,9 +2,7 @@ class Flight < ApplicationRecord
 
   @@response = nil
 
-  attr_reader = :origin
-  attr_reader = :destination
-  attr_reader = :date
+
 
   def initialize(origin, destination, date)
     @origin = origin
@@ -21,7 +19,7 @@ class Flight < ApplicationRecord
                                                 "slice": [
                                                   {
                                                     "origin": @origin,
-                                                    "destination": ['LAX', 'SEA', 'BNA'],
+                                                    "destination": @destination,
                                                     "date": @date
                                                   }
                                                 ],

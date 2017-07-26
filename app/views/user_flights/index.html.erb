@@ -1,10 +1,12 @@
-<h3>USER FLIGHTS INDEX</h3>
+<h3>Welcome <%=current_user.email%></h3>
+<h4>Your saved flights</h4>
 
 <% current_user.user_flights.each do |flight| %>
 Price worked<%= flight.price %>
+<br>
 <% end %>
 
 
 <br>
-<br>  
+<br>
 if want to delet need to pass method
