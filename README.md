@@ -4,7 +4,7 @@ James' Cheap Flights Finder
 
 #### _This applications finds cheap flights_
 
-Visit Live Hosted Site On Heroku [here](https://james-cheap-flights.herokuapp.com/)
+Visit Live Hosted Site On Heroku [here](https://james-cheap-flights.herokuapp.com/){:target="_blank"}
 
 #### By _**James Higgins**_
 
@@ -28,7 +28,7 @@ $ rails s
 $ open localhost:3000 in your browser
 
 ```
- or view live site [here](https://james-cheap-flights.herokuapp.com/)
+ or view live site [here](https://james-cheap-flights.herokuapp.com/){:target="_blank"}
 
 
 ## API Info
