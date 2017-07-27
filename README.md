@@ -37,7 +37,7 @@ $ open localhost:3000 in your browser
  * You need a [Google Account](https://accounts.google.com/SignUp?continue=https%3A%2F%2Faccounts.google.com%2FManageAccount) in order to [create a project](https://developers.google.com/qpx-express/v1/prereqs#project) in the Google API Console. If you already have an account, then you're all set.
  * Note: Google only gives each API Key 50 free calls per day.
 
- <img src="app/assets/images/api-instructions.png" height="650" />
+ <img src="app/assets/images/api-instructions.png" height="350" />
 
 ## Known Bugs
 
@@ -45,10 +45,12 @@ $ open localhost:3000 in your browser
 
 ## Future Features
 
- * There are no known bugs at this time
- * There are no known bugs at this time
- * There are no known bugs at this time
- * There are no known bugs at this time
+ * Test Custom Routes and API Call
+ * Show list of Airport codes
+ * Callback to upcased all inputted airport codes
+ * More Developed User Accounts
+ * Change from One way to Round-Trip
+
 
 
 ## Support and contact details
