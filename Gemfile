@@ -19,13 +19,13 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'rest-client'
 gem 'pry'
-
+gem 'dotenv-rails', require: 'dotenv/rails-now'
 
 gem 'rails_admin', '~> 1.2'
 
 
 group :development, :test do
-  gem 'dotenv-rails', require: 'dotenv/rails-now'
+
 
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
@@ -37,7 +37,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'dotenv-rails', require: 'dotenv/rails-now'
+
 
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
