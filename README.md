@@ -43,7 +43,7 @@ $ open localhost:3000 in your browser
 
  * There are no known bugs at this time
 
-## Future Features
+## Future Features Coming Soon
 
  * Test Custom Routes and API Call
  * Show list of Airport codes
@@ -67,3 +67,7 @@ $ open localhost:3000 in your browser
  *This software is licensed under MIT license.*
 
 Copyright (c) 2017 **_James Higgins_**
+
+ <img src="app/assets/images/search.png" height="650" />
+ <img src="app/assets/images/flights.png" height="650" />
+ <img src="app/assets/images/saved.png" height="650" />
