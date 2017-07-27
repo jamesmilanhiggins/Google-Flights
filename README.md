@@ -68,6 +68,6 @@ $ open localhost:3000 in your browser
 
 Copyright (c) 2017 **_James Higgins_**
 
- <img src="app/assets/images/search.png" height="650" />
- <img src="app/assets/images/flights.png" height="650" />
- <img src="app/assets/images/saved.png" height="650" />
+ <img src="app/assets/images/search.png" height="450" />
+ <img src="app/assets/images/flights.png" height="450" />
+ <img src="app/assets/images/saved.png" height="450" />

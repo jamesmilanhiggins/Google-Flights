@@ -22,6 +22,8 @@
       <%= hidden_field_tag 'mpd', @best_flight['miles_per_dollar'] %>
       <%= hidden_field_tag 'departureTime', @best_flight['slice'][0]['segment'][0]['leg'][0]['departureTime'] %>
       <%= hidden_field_tag 'arribalTime', @best_flight['slice'][0]['segment'][0]['leg'][0]['arrivalTime'] %>
+      <%= hidden_field_tag 'origin', @best_flight['slice'][0]['segment'][0]['leg'][0]['origin'] %>
+      <%= hidden_field_tag 'destination', @best_flight['slice'][0]['segment'].last['leg'][0]['destination'] %>
       <br>
       <%= submit_tag 'save', class: "btn btn-lg btn-flight"%>
       <br>

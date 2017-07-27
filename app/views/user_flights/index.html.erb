@@ -7,6 +7,8 @@
   <h3><%= link_to "",  user_user_flight_path(current_user, flight), :method => "delete", class: "btn-red glyphicon glyphicon-remove" %>  </h3>
     <h4>MPD: <%= flight.mpd %></h4>
     <h4>Price: <%= flight.price %></h4>
+    <h4>Origin: <%= flight.origin %></h4>
+    <h4>Destination: <%= flight.destination%></h4>
     <h4>Airline Carrier: <%= flight.airlineCarrier %></h4>
     <h4>Flight Number: <%= flight.airlineNumber %></h4>
     <h4>Departure Time: <%= flight.departureTime %></h4>
