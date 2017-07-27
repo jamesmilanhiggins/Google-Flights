@@ -1,8 +1,11 @@
-<h1>Welcome <%=current_user.email%></h3>
-  <h2>Your saved flights</h4>
-
-    <% current_user.user_flights.each do |flight| %>
+<div class="saved-flights-page">
+<h2>Welcome <%=current_user.email%></h3>
+</div>
+    <hr>
     <div class="saved-flights">
+      <h1 class="my-header">Saved flights</h4>
+      <br>
+    <% current_user.user_flights.each do |flight| %>
 
       <h3><%= link_to "",  user_user_flight_path(current_user, flight), :method => "delete", class: "btn-red glyphicon glyphicon-remove" %>
 
@@ -19,4 +22,5 @@
       </h3>
       <br>
     </div>
+
     <% end %>

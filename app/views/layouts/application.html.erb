@@ -7,18 +7,18 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="/assets/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
 
   <body>
     <div class="pos-f-t">
       <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-inverse p-4">
+        <!-- <div class="bg-inverse p-4"> -->
           <h2>  <%= link_to 'Sign Out',  destroy_user_session_path, :method => "delete" if user_signed_in? %></h2>
           <h2><%= link_to "Sign In", new_user_session_path if !user_signed_in? %> </h2>
           <h2><%= link_to "Sign Up", new_user_registration_path if !user_signed_in? %> </h2>
         </div>
-      </div>
+      <!-- </div> -->
       <nav class="navbar navbar-inverse bg-inverse">
         <button class="btn btn-lg btn-danger" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,18 +27,18 @@
     </div>
       <div class="row nav-left" >
         <div class="col-md-4 nav-left">
-          <div class="nav-bar">
+          <div class="nav-bar" id="first-nav">
 
             <h1> <%= link_to "Search Flights",  '/' %></h1>
 
           </div>
-          <div class="nav-bar">
+          <div class="nav-bar" id="second-nav">
             <h1> <%= link_to "The Algorithim",  '/the-calculations' %></h1>
           </div>
-          <div class="nav-bar">
+          <div class="nav-bar" id="third-nav">
             <h1><%= link_to "Your Saved Flights",  userflights_path %></h1>
           </div>
-          <div class="nav-bar">
+          <div class="nav-bar" id="fourth-nav">
               <h1> <%= link_to "About James",  '/about-james' %></h1>
           </div>
           <!-- <div class="nav-bar">
