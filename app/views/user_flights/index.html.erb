@@ -1,22 +1,16 @@
 
-    <div class="saved-flights">
-      <h1 class="my-header">Saved Flights</h4><hr> <h2>Welcome <%=current_user.email%></h3>
-      <br>
-    <% current_user.user_flights.each do |flight| %>
+<div class="saved-flights">
+  <h1 class="my-header">Saved Flights</h1><hr> <h2>Welcome <%=current_user.email%></h2>
+  <br>
+  <% current_user.user_flights.each do |flight| %>
 
-      <h3><%= link_to "",  user_user_flight_path(current_user, flight), :method => "delete", class: "btn-red glyphicon glyphicon-remove" %>
-
-
-        <h4>MPD: <%= flight.mpd %></h4>
-        <h4>Price: <%= flight.price %></h4>
-        <h4>Airline Carrier: <%= flight.airlineCarrier %></h4>
-        <h4>Flight Number: <%= flight.airlineNumber %></h4>
-        <h4>Departure Time: <%= flight.departureTime %></h4>
-        <h4>Arrival Time: <%= flight.arribalTime %></h4>
-
-
-      </h3>
-      <br>
-
-    <% end %>
-  </div>
+  <h3><%= link_to "",  user_user_flight_path(current_user, flight), :method => "delete", class: "btn-red glyphicon glyphicon-remove" %>  </h3>
+    <h4>MPD: <%= flight.mpd %></h4>
+    <h4>Price: <%= flight.price %></h4>
+    <h4>Airline Carrier: <%= flight.airlineCarrier %></h4>
+    <h4>Flight Number: <%= flight.airlineNumber %></h4>
+    <h4>Departure Time: <%= flight.departureTime %></h4>
+    <h4>Arrival Time: <%= flight.arribalTime %></h4>
+  <br>
+<% end %>
+</div>

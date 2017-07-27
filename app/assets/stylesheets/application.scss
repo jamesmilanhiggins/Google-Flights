@@ -21,10 +21,11 @@ body {
   border-width: thick;
   text-align: center;
 
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   h1 {
-    // margin-top: 15%;
     font-size: 50px;
 
   }
@@ -35,6 +36,8 @@ body {
   h1 a:hover {
     text-decoration: none;
     font-weight: bold;
+    font-size: 55px;
+
   }
 
 }
@@ -60,6 +63,7 @@ body {
 }
 .my-sign {
   text-align: right;
+  margin-right: 15px;
 }
 // background blue #5EDFFF
 // background dark blue #47BDE5
