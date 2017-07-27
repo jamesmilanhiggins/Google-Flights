@@ -58,6 +58,9 @@ body {
   display: block;
   overflow: auto;
 }
+.my-sign {
+  text-align: right;
+}
 // background blue #5EDFFF
 // background dark blue #47BDE5
 
@@ -69,8 +72,8 @@ body {
 .border-form-div {
   max-width: 500px;
   padding: 19px 29px 29px;
-  margin-top: 30%;
-  margin-left: 30%;
+  margin-top: 15%;
+  margin-left: 35%;
   background-color: white;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
@@ -92,14 +95,22 @@ body {
   padding: 7px 9px;
 }
 .flight-div {
-  // border-style: inset;
-  // border-width: thick;
+font-size: 14px;
+
 }
 .best-flight-div {
-  background-color: #3cba54;
+  margin-left: 20%;
+  margin-right: 20%;
   text-align: center;
-  border-style: inset;
-  border-width: thick;
+  padding: 5px;
+
+
+}
+.best-flight-div:hover {
+box-shadow: -35px 96px 1110px 16.4px black;
+
+
+
 }
 #first-nav{
   background-color: #3cba54;

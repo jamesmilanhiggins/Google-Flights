@@ -1,9 +1,6 @@
-<div class="saved-flights-page">
-<h2>Welcome <%=current_user.email%></h3>
-</div>
-    <hr>
+
     <div class="saved-flights">
-      <h1 class="my-header">Saved flights</h4>
+      <h1 class="my-header">Saved Flights</h4><hr> <h2>Welcome <%=current_user.email%></h3>
       <br>
     <% current_user.user_flights.each do |flight| %>
 
@@ -13,7 +10,6 @@
         <h4>MPD: <%= flight.mpd %></h4>
         <h4>Price: <%= flight.price %></h4>
         <h4>Airline Carrier: <%= flight.airlineCarrier %></h4>
-        <h4>Airline Carrier: <%= flight.airlineCarrier %></h4>
         <h4>Flight Number: <%= flight.airlineNumber %></h4>
         <h4>Departure Time: <%= flight.departureTime %></h4>
         <h4>Arrival Time: <%= flight.arribalTime %></h4>
@@ -21,6 +17,6 @@
 
       </h3>
       <br>
-    </div>
 
     <% end %>
+  </div>
