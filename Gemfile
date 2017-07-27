@@ -26,6 +26,7 @@ gem 'rails_admin', '~> 1.2'
 
 group :development, :test do
   gem 'dotenv-rails', require: 'dotenv/rails-now'
+
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
   gem 'launchy'
@@ -40,6 +41,8 @@ group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'dotenv-rails', require: 'dotenv/rails-now'
+
 
 
 end
