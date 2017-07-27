@@ -38,26 +38,12 @@ end
                 value application/json
 
 
-  - Test API call in rails
-  - Display flights in views
-  - Display flight name[price][distance]
-  - Take User inputs
-    - origin
-    - destination
-    - Date
- OR
-  - Take user destination and date, and return flights under inputted Miles per Dollar
 
 
-  - Devise and RailsAdmin
-  - Make people login before they can search
+
+  
+  -
   - callbacks for airport code input, upcase
 
 
-  -Take user input for Price/mileage pass that variable to back-end conditional
-  - Spec and Testing
 
-
-  Further Exploration and Additional Features
-  - let users save flights
-  - 
