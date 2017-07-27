@@ -4,7 +4,7 @@ James' Cheap Flights Finder
 
 #### _This applications finds cheap flights_
 
-Visit Live Hosted Site On Heroku <a href="https://james-cheap-flights.herokuapp.com/" target="_blank">here</a>
+Visit Live Hosted Site On Heroku <a href="https://james-cheap-flights.herokuapp.com/" target="blank">here</a>
 
 #### By _**James Higgins**_
 
