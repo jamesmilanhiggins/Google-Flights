@@ -1,49 +1,67 @@
-# README
+<h1 align="center">
+James' Cheap Flights Finder
+</h1>
+
+#### _This applications finds cheap flights_
+
+Visit Live Hosted Site On Heroku [here]()
+
+#### By _**James Higgins**_
+
+## How To Use
 
 
+* _Ensure connection to the Internet_
+* _On a mac using spotlight search, type in terminal_
+* _Once in terminal enter the following commands to clone the file to your desktop and open the repository:_
+```
+$ cd desktop
+$ git clone https://github.com/jamesmilanhiggins/Google-Flights
+$ cd Google-Flights
+$ touch .env
+$ atom .
+Get an API key for [QPX EXPRESS API](https://developers.google.com/qpx-express/v1/prereqs)
+Open the .env file and add "GOOGLE_FLIGHTS_API_KEY=[YOUR API KEY HERE]"
+$ bundle
+$ rake db:setup
+$ rails s
+$ open localhost:3000 in your browser
 
-* instructions on how to get a goolge flights api KEY
-  Create a .env file and add GOOGLE_FLIGHTS_API_KEY=[ADD YOUR API KEY HERE]
-
-
-To do lists
-  - Test API Call in Postman
-  def get_flights
-    response = RestClient::Request.execute(method: :post,
-                                url: 'https://www.googleapis.com/qpxExpress/v1/trips/search?key=' + ENV['GOOGLE_FLIGHTS_API_KEY'],
-                                payload: {
-                                             "request": {
-                                               "slice": [
-                                                 {
-                                                   "origin": "PDX",
-                                                   "destination": ["LAX", "SEA", "ATL", "ORD", "DFW", "JFK", "DEN", "SFO", "CLT", "LAS", "PHX", "MIA", "IAH", "MCO", "EWR", "MSR", "BOS", "DTW", "PHL", "LGA", "FLL", "BWI", "DCA", "MDW", "SLC", "IAD", "SAN", "HNL", "TPA"],
-                                                   "date": "2017-12-02"
-                                                 }
-                                               ],
-                                               "passengers": {
-                                                 "adultCount": 1
-                                               },
-                                               "solutions": 100,
-                                               "refundable": false
-                                             }
-                                           }.to_json,
-                                headers: {"Content-Type" => "application/json"}
-                              )
-
-    JSON.parse(response)
-
-end
-              Header
-                key Content-Type
-                value application/json
+```
+ or view live site [here]()
 
 
+## API Info
+
+ * This project uses [QPX Express API](https://developers.google.com/qpx-express/).
+ * You need a [Google Account](https://accounts.google.com/SignUp?continue=https%3A%2F%2Faccounts.google.com%2FManageAccount) in order to [create a project](https://developers.google.com/qpx-express/v1/prereqs#project) in the Google API Console. If you already have an account, then you're all set.
+ * Note: Google only gives each API Key 50 free calls per day.
+
+ <img src="app/assets/images/api-instructions.png" height="650" />
+
+## Known Bugs
+
+ * There are no known bugs at this time
+
+## Future Features
+
+ * There are no known bugs at this time
+ * There are no known bugs at this time
+ * There are no known bugs at this time
+ * There are no known bugs at this time
 
 
+## Support and contact details
 
-  
-  -
-  - callbacks for airport code input, upcase
+ _Please contact James Higgins at James.Milan.Higgins@gmail.com if you have any questions or ideas._
 
+## Technologies Used
 
+ * Ruby
+ * Rails
 
+### License
+
+ *This software is licensed under MIT license.*
+
+Copyright (c) 2017 **_James Higgins_**
