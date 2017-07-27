@@ -10,11 +10,8 @@
 
     <%= form_tag action: 'save_flight', controller: 'user_flights' do %>
         <%= hidden_field_tag 'mpd', @best_flight['miles_per_dollar'] %>
-        <%= submit_tag 'submit'%>
+        <%= submit_tag 'Save', class: 'btn btn-info glyphicon glyphicon-save'%>
     <% end %>
-  <!-- <button class="btn btn-primary" type="button" name="button">Save this flight</button> -->
-
-
 
   <hr>
 

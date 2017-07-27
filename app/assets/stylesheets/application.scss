@@ -23,7 +23,8 @@ body {
   h1 {
     font-size: 50px;
   }
-  h1:hover {
+  h1 a:hover {
+    text-decoration: none;
   // font-size: 80px;
   }
 

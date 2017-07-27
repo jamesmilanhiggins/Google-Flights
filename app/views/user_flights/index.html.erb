@@ -1,13 +1,8 @@
-<h3>Welcome <%=current_user.email%></h3>
-<h4>Your saved flights</h4>
+<h1>Welcome <%=current_user.email%></h3>
+<h2>Your saved flights</h4>
 
 <% current_user.user_flights.each do |flight| %>
-Price worked<%= flight.price %>
- <%= link_to "",  user_user_flight_path(current_user, flight), :method => "delete", class: "btn-red glyphicon glyphicon-remove" %>
+<h3><%= link_to "",  user_user_flight_path(current_user, flight), :method => "delete", class: "btn-red glyphicon glyphicon-remove" %>      $<%= flight.price %>
+ </h3>
 <br>
 <% end %>
-
-
-<br>
-<br>
-if want to delet need to pass method
