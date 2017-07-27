@@ -1,8 +1,22 @@
 <h1>Welcome <%=current_user.email%></h3>
-<h2>Your saved flights</h4>
+  <h2>Your saved flights</h4>
 
-<% current_user.user_flights.each do |flight| %>
-<h3><%= link_to "",  user_user_flight_path(current_user, flight), :method => "delete", class: "btn-red glyphicon glyphicon-remove" %>      $<%= flight.price %>
- </h3>
-<br>
-<% end %>
+    <% current_user.user_flights.each do |flight| %>
+    <div class="saved-flights">
+
+      <h3><%= link_to "",  user_user_flight_path(current_user, flight), :method => "delete", class: "btn-red glyphicon glyphicon-remove" %>
+
+
+        <h4>MPD: <%= flight.mpd %></h4>
+        <h4>Price: <%= flight.price %></h4>
+        <h4>Airline Carrier: <%= flight.airlineCarrier %></h4>
+        <h4>Airline Carrier: <%= flight.airlineCarrier %></h4>
+        <h4>Flight Number: <%= flight.airlineNumber %></h4>
+        <h4>Departure Time: <%= flight.departureTime %></h4>
+        <h4>Arrival Time: <%= flight.arribalTime %></h4>
+
+
+      </h3>
+      <br>
+    </div>
+    <% end %>

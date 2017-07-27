@@ -5,10 +5,15 @@
 <div class="row">
   <div class="best-flight-div">
         <%= form_tag action: 'save_flight', controller: 'user_flights' do %>
+        <%= hidden_field_tag "airlineCarrier", @best_flight['slice'][0]['segment'][0]['flight']['carrier'] %>
+        <%= hidden_field_tag "airlineNumber", @best_flight['slice'][0]['segment'][0]['flight']['number'] %>
+        <%= hidden_field_tag "price", @best_flight['saleTotal'] %>
         <%= hidden_field_tag 'mpd', @best_flight['miles_per_dollar'] %>
-
+        <%= hidden_field_tag 'departureTime', @best_flight['slice'][0]['segment'][0]['leg'][0]['departureTime'] %>
+        <%= hidden_field_tag 'arribalTime', @best_flight['slice'][0]['segment'][0]['leg'][0]['arrivalTime'] %>
       <%= submit_tag 'save', class: "btn btn-flight"%>
     <% end %>
+
       <h2>The Highest Miles Per Dollar(MP$) Flight is :</h2>
         <h4>Airline Carrier:<%= @best_flight['slice'][0]['segment'][0]['flight']['carrier'] %>
         <h4>Flight Number:<%= @best_flight['slice'][0]['segment'][0]['flight']['number'] %></h4>
