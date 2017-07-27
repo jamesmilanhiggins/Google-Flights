@@ -16,7 +16,12 @@ mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
     end
   end
 
+  get "about-james" => "james#index"
+  get "the-calculations" => "about#index"
+
   resources :flights
   resources :home
+  resources :james
+  resources :about
 
 end

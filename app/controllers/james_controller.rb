@@ -1,0 +1,3 @@
+class JamesController < ApplicationController
+
+end
