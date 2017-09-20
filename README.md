@@ -21,8 +21,8 @@ $ cd Google-Flights
 $ touch .env
 $ atom .
 ```
-Get an API key for [QPX EXPRESS API](https://developers.google.com/qpx-express/v1/prereqs)
-Open the .env file and add "GOOGLE_FLIGHTS_API_KEY=[YOUR API KEY HERE]"
+* _Get an API key for [QPX EXPRESS API](https://developers.google.com/qpx-express/v1/prereqs)_
+* _Open the .env file and add "GOOGLE_FLIGHTS_API_KEY=[YOUR API KEY HERE]"_
 ```
 $ bundle
 $ rake db:setup
