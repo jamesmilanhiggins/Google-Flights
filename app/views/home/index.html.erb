@@ -3,8 +3,8 @@
 <div class="border-form-div">
     <form action="flights" >
       <br>
-      <input type="text" name="origin" placeholder="Origin ex:PDX" required>
-      <input type="text" name="destination" placeholder="Destination ex:LAX " required>
+      <input type="text" name="origin" placeholder="Origin ex:PDX" minlength="3" maxlength="3" required>
+      <input type="text" name="destination" placeholder="Destination ex:LAX" minlength="3" maxlength="3"required>
       <input type="date" name="date" value="2017-12-12" required>
       <button class="glyphicon glyphicon-search btn btn-flight" type="submit" name="button"></button>
     </form>

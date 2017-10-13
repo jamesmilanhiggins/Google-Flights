@@ -1,4 +1,4 @@
-ruby "2.4.1"
+ruby "2.4.2"
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
@@ -20,7 +20,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'rest-client'
 gem 'pry'
-gem 'dotenv-rails', require: 'dotenv/rails-now'
 
 gem 'rails_admin', '~> 1.2'
 
