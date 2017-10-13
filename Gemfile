@@ -20,7 +20,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'rest-client'
 gem 'pry'
-
+gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'rails_admin', '~> 1.2'
 
 
